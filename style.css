@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* \#navigation bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position:sticky;
+    
+    font-family: 'Saira', sans-serif;
+    font-weight: lighter;
+    /* width: 202vw; */
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left:0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+.item {
+    /* margin: 5px; */
+    
+    list-style: none;
+
+}
+
+#navbar ul li a {
+    color: aliceblue;
+    display: block;
+    padding: 3px 22px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+#logo {
+    /* height: 3px; */
+    margin: 2px 10px;
+    /* border: 2px solid red; */
+
+}
+
+#logo img {
+    height: 54px;
+    width: 63px;
+
+
+}
+
+/* #home-container {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;} */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    /* padding: 20px 200px 4px 200px; */
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    /* overflow: scroll; */
+
+}
+#home::before {
+    content: "";
+    background: url("pexels-cottonbro-4488660.jpg") no-repeat center center/cover ;
+    
+    position: absolute;
+     top: 0px;
+    /*left:0px; */
+    height: 570px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    
+}
+#home h2{
+    
+    color: rgb(150, 72, 72);
+    text-align: center;
+    font-family: 'Blaka Hollow', 'cursive';
+    font-size: 4rem;
+    text-shadow: 2px 2px rgb(228, 228, 228);
+    margin-top: 90px;
+    margin-bottom: 10px;
+
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    font-family: 'Mukta', sans-serif;
+    padding: 10px;
+    font-weight: lighter;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgba(116, 135, 245, 0.274);
+    font-family: 'Saira', sans-serif;
+    font-size: 1.1rem;
+    border-radius: 200px;
+    color: whitesmoke;
+    margin: 17px;
+}
+.btn:hover{
+    background-color: rgba(116, 135, 245, 0.596);
+    cursor: pointer;
+    /* border-color: rgba(116, 135, 245, 0.274); */
+}
+
+/* services section  */
+/* #services-container{
+    content: "";
+    background-color: rgb(83, 53, 8); */
+/* } */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid purple;
+    padding: 7px;
+    margin: 3px;
+    margin-bottom: 1px;
+    border-radius: 24px;
+    background-color: rgba(165, 115, 115, 0.123);
+}
+#services .box img{
+    height: 102px;
+    display: block;
+    margin: auto;
+
+}
+
+
+/* Cleints section */
+#client-section{
+    height: 360px;
+    /* position: relative; */
+    /* background-color: rgb(7, 6, 5); */
+
+}
+#client-section::before{
+   content: "";
+   position: absolute;
+   /* background-color: rgb(226, 170, 114); */
+   background: url("1.jpg") no-repeat center  center/cover;
+   /* object-fit: fill ; */
+   /* top: 0px; */
+   /* left:0px; */
+   width: 100%;
+   height: 358px;
+   z-index: -1;
+   /* opacity:0.9; */
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 180px;
+    border-radius: 10px;
+    
+   
+}
+
+.client-item{
+    padding: 40px;
+    object-fit: contain;
+
+}
+
+/* contact section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url("automobile-gc7fe3bd27_1920.jpg") no-repeat center  center/cover;
+    width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity:0.9;
+
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 34px;
+
+}
+#contact-box form{
+    width: 35%;
+}
+#contact-box label{
+    font-family: 'Saira', sans-serif;
+    font-size: 1.1rem;
+    
+}
+#contact-box input,
+#contact-box textarea{
+    border-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    font-family: 'Mukta', sans-serif;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 8.5px;
+}
+
+
+/* utility classes */
+.h-secondary{
+    font-size: 2.2rem;
+    padding: 8px;
+    font-family: 'Saira', sans-serif;
+    
+}
+.h-primary{
+    font-size: 2.9rem;
+    padding: 8px;
+    font-family: 'Saira', sans-serif;
+    
+}
+.text{
+    font-size: 1rem;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 400;
+}
+.center{
+    text-align: center;
+}
