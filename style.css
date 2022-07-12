@@ -12,7 +12,7 @@ html{
     display: flex;
     align-items: center;
     position:sticky;
-    
+    top: 0;
     font-family: 'Saira', sans-serif;
     font-weight: lighter;
     /* width: 202vw; */
